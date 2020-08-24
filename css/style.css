@@ -1,0 +1,185 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #272B2B;
+}
+
+main {
+    height: 70vh;
+    padding-top: 25vh;
+}
+
+.app {
+    width: 600px;
+    height: 200px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color:#272B2B;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 0.1),
+                4px 4px 15px rgba(0, 0, 0, 0.5),
+                inset 0px 0px 8px rgba(255, 255, 255, 0.04);
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    align-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgba(133, 145, 145, .3);
+}
+
+.iniciar {
+    color: #B2FFA9;
+}
+
+.pausar {
+    color: #F2F59A;
+}
+
+.zerar {
+    color: #FF8D6E;
+}
+
+.iniciar,
+.pausar,
+.zerar{
+    background-color:#272B2B;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 0.1),
+                4px 4px 15px rgba(0, 0, 0, 0.5),
+                inset 0px 0px 8px rgba(255, 255, 255, 0.04);
+}
+
+.iniciar:hover,
+.pausar:hover,
+.zerar:hover {
+    color: #f1f1f1;
+}
+
+
+h1 {
+    color: #f1f1f1;
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+footer {
+    padding: 2em;
+    height: 30vh;
+}
+
+h2 {
+    color: #f1f1f1;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+  
+footer .icons {
+    width: 400px;
+    display: flex;
+    align-content: space-around;
+}
+
+footer a {
+    fill: transparent;
+    width: 80px;
+    height: 80px;
+    stroke-width: 10px;
+}
+
+.github {
+    stroke: #B2FFA9;
+    stroke-dasharray: 2550;
+    stroke-dashoffset: 0;
+}
+
+.github:hover {
+    animation: animate-github 2s linear forwards;
+}
+
+@keyframes animate-github {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2550;
+    }
+    80%{
+        stroke-dashoffset: 5100;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 5100;
+        fill: #B2FFA9;
+    }
+}
+
+.instagram {
+    stroke: #F2F59A;
+    stroke-dasharray: 2550;
+    stroke-dashoffset: 0;
+}
+
+.instagram:hover {
+    animation: animate-instagram 2s linear forwards;
+}
+
+@keyframes animate-instagram {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2550;
+    }
+    80%{
+        stroke-dashoffset: 5100;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 5100;
+        fill: #F2F59A;
+    }
+}
+
+.twitter {
+    stroke: #FF8D6E;
+    stroke-dasharray: 2550;
+    stroke-dashoffset: 0;
+}
+
+.twitter:hover {
+    animation: animate-twitter 2s linear forwards;
+}
+
+@keyframes animate-twitter {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 2550;
+    }
+    80%{
+        stroke-dashoffset: 5100;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 5100;
+        fill: #FF8D6E;
+    }
+}
